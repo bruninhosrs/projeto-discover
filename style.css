@@ -18,6 +18,7 @@
 body {
   /* background: color image repeat position/size */
   background: var(--planoFundoMobile) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -153,4 +154,14 @@ ul li a:hover {
 
 #social-midia a:hover {
   background: var(--highLightColor);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --planoFundo: url(./assets/bg-desktop.jpg);
+  }
+
+  .light-mode {
+    --planoFundo: url(./assets/bg-desktop-light.jpg);
+  }
 }

@@ -86,11 +86,15 @@ a {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: deslizarParaFora 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--corDeFundoBtn);
 }
 
 .light-mode #switch button {
-  right: 0;
-  left: initial;
+  animation: deslizarParaDentro 0.2s forwards;
 }
 
 #switch span {
@@ -163,5 +167,23 @@ ul li a:hover {
 
   .light-mode {
     --planoFundo: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes deslizarParaDentro {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes deslizarParaFora {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
   }
 }

@@ -7,24 +7,28 @@ const img = document.querySelector("#perfil img");
 const mudarLight = () => {
   body.classList.toggle("light-mode"); // Modo mais rápido pra fazer essa troca
 
-  //substitui a img
+  // substitui a img
   if (body.classList.contains("light-mode")) {
     //se tiver light-mode, faça
-    img.setAttribute("src", "./assets/avatar-light.png");
+    img.setAttribute("src", "./assets/avatar-light.jpg");
     img.setAttribute(
       "alt",
-      "Foto do Mayyk de óculos escuro com uma jaqueta e camisa preta sorrindo"
+      "Foto do Bruno sentado na cadeira fazendo careta com uma camisa branca, calça preta e com suspensorio"
     );
+    img.style.width = "36%";
+    img.style.borderRadius = "50%";
+    img.style.objectFit = "cover";
+    img.style.border = "1.5px #ffffff70 solid";
   } else {
     img.setAttribute("src", "https://github.com/bruninhosrs.png");
   }
 
-  //   if (body.classList.contains("light-mode")) {
-  //     // PERGUNTA SE A "LUZ" ESTÁ ACESA
-  //     body.classList.remove("light-mode"); // SE FOR VERDADE (ESTIVER COM O LIGHT-MODE), ELE SAI DO LIGHT-MODE E ENTRA NO DARK-MODE
-  //   } else {
-  //     body.classList.add("light-mode"); // SE FOR MENTIRA (ESTIVER COM O DARK-MODE), ELE SAI DO DARK-MODE E ENTRA NO LIGHT-MODE
-  //   }
+  // if (body.classList.contains("light-mode")) {
+  //   // PERGUNTA SE A "LUZ" ESTÁ ACESA
+  //   body.classList.remove("light-mode"); // SE FOR VERDADE (ESTIVER COM O LIGHT-MODE), ELE SAI DO LIGHT-MODE E ENTRA NO DARK-MODE
+  // } else {
+  //   body.classList.add("light-mode"); // SE FOR MENTIRA (ESTIVER COM O DARK-MODE), ELE SAI DO DARK-MODE E ENTRA NO LIGHT-MODE
+  // }
 };
 
 switchBtn.addEventListener("click", mudarLight);

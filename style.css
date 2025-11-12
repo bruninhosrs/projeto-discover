@@ -60,6 +60,13 @@ a {
   border: 1.5px #ffffff70 solid;
 }
 
+#bruno {
+  width: 36%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px #ffffff70 solid;
+}
+
 #perfil p {
   font-weight: 500;
   line-height: 24px;

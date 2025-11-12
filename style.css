@@ -1,0 +1,155 @@
+:root {
+  --fonte: "Inter", sans-serif;
+  --planoFundoMobile: url(./assets/bg-mobile.jpg);
+  --corDaFonte: #ffff;
+  --corDaBorda: rgba(255, 255, 255, 0.5);
+  --corDeFundoBtn: rgba(255, 255, 255, 0.05);
+  --corDeFundoBtnHover: rgba(0, 0, 0, 0.02);
+  --highLightColor: rgba(255, 255, 255, 0.2);
+  --switchBgUrl: url(./assets/moon-stars.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: color image repeat position/size */
+  background: var(--planoFundoMobile) no-repeat top center/cover;
+}
+
+body * {
+  font-family: var(--fonte);
+  color: var(--corDaFonte);
+}
+
+.light-mode {
+  --corDaFonte: black;
+  --planoFundoMobile: url(./assets/bg-mobile-light.jpg);
+  --corDaBorda: rgba(0, 0, 0, 0.5);
+  --corDeFundoBtn: rgba(0, 0, 0, 0.05);
+  --corDeFundoBtnHover: rgba(0, 0, 0, 0.02);
+  --highLightColor: rgba(0, 0, 0, 0.1);
+  --switchBgUrl: url(./assets/sun.svg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--corDaFonte);
+}
+
+#container-principal {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#perfil {
+  text-align: center;
+  padding: 24px;
+}
+
+#perfil img {
+  width: 36%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px #ffffff70 solid;
+}
+
+#perfil p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#switch {
+  /* border: 1px red solid; */
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: #ffff var(--switchBgUrl) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light-mode #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--corDeFundoBtn);
+  border: 1px solid var(--corDaBorda);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* links */
+ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  /* O <a> ele já tem a propriedade display inline (em linha) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+
+  background: var(--corDeFundoBtn);
+  border: 1px solid var(--corDaBorda);
+  border-radius: 8px;
+
+  font-weight: bold;
+  backdrop-filter: blur(4px);
+  transition: 0.2s;
+}
+
+ul li a:hover {
+  background: var(--corDeFundoBtnHover);
+  border: 1.5px #ffff solid;
+}
+
+#social-midia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-midia a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-midia a:hover {
+  background: var(--highLightColor);
+}

@@ -1,25 +1,14 @@
-<!-- <h1 align="center"> Projeto Discover </h1>
+<h1 align="center"> Projeto Discover </h1>
 
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
+  <img alt="projeeto Discover" src="./assets/print-discover.jpeg" width="100%">
+  <img alt="projeeto Discover" src="./assets/print-discover-mobile.jpeg" width="50%%">
 </p>
 
 ## 🚀 Tecnologias
@@ -28,25 +17,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - JavaScript
+- Vite.js
 - Git e Github
 - Figma
 
 ## 💻 Projeto
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
+O Projeto Discover é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online.](https://bruninhosrs.github.io/projeto-discover/)
 
-- [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
+## 🎯 Meus Aprendizados
 
-## 🔖 Layout
+Durante o desenvolvimento deste projeto, pude aprimorar meus conhecimentos em:
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat) -->
+- Modo Light;
+- Usar algumas funcionalidades do flex, flex-direction na sessão da lista;
+- Animações no botão que faz com que a transição de mudar do dark-mode para o light-mode;
+- Funções no JavaScript, fazer as manipulações do DOM, como clicar no botão e mudar os mode e mudar de foto;
+- Ajustar a estilização da foto pelo JavaScript, eu já sabia, porém reelembrando novamente como se faz;
+- Que existe um jeito muito mais fácil de mudar o mode (cor) da página;
+- Pude aprender mais sobre o Vite.js, não foi utilizado a ferramenta nas aulas;
+- Pude aprender como utilizar a ferramenta Figma, nunca tinha utilizado e me supreendi como ficou muito mais fácil para criações de <section> e <div>.
